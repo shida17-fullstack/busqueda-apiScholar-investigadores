@@ -250,7 +250,7 @@ Este proyecto no solo contribuye al desarrollo de una herramienta eficiente para
 
 ## Captura de Google Scholar Profile y Author
 
-![Google Scholar Profile](/src/main/resources/capturas/google_scholar_profile/Capturas_GoogleScholarProfile_investigador_universidad_mexico_norte/Captura web_12-1-2024_74630_serpapi.com.jpeg)
+![Perfil de Google Scholar](src/main/resources/capturas/google_scholar_profile/Capturas_GoogleScholarProfile_investigador_universidad_mexico_norte/Captura web_12-1-2024_74630_serpapi.com.jpeg)
 
-![Google Scholar Author](/src/main/resources/capturas/google_scholar_author/Capturas_GoogleScholarAuthor_investigador_universidad_mexico_norte/Captura web_12-1-2024_74830_serpapi.com.jpeg)
+![Autor de Google Scholar](src/main/resources/capturas/google_scholar_author/Capturas_GoogleScholarAuthor_investigador_universidad_mexico_norte/Captura web_12-1-2024_74830_serpapi.com.jpeg)
 
