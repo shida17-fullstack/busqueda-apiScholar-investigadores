@@ -17,8 +17,9 @@ gradle/
 !gradle/wrapper/gradle-wrapper.jar
 !gradle/wrapper/gradle-wrapper.properties
 
-# Task directory
-Task/
+# Task directory (ignorar Task y sus subdirectorios)
+Task/*
+
 
 # Gradle 8.5 binary distribution
 gradle-8.5-bin/
