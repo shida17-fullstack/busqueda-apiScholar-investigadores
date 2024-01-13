@@ -1,0 +1,24 @@
+# Ignore build artifacts and generated files
+/build/
+/bin/
+/.gradle/
+/src/main/java/utils/Config.java
+.settings/
+.classpath
+.project
+*.log
+
+# Eclipse
+.metadata/
+
+# Gradle
+.gradle/
+gradle/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Task directory
+Task/
+
+# Gradle 8.5 binary distribution
+gradle-8.5-bin/
