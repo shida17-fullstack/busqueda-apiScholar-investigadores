@@ -1,0 +1,44 @@
+	plugins {
+	    id 'java'
+	    id 'eclipse'
+	}
+	
+	repositories {
+	    mavenCentral()
+	}
+	
+	dependencies {
+	    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+	    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.13.0'
+	    implementation 'com.fasterxml.jackson.core:jackson-core:2.13.0'
+	    
+	}
+	
+	java {
+	    toolchain {
+	        languageVersion.set(JavaLanguageVersion.of(21))
+	    }
+	}
+	
+	jar {
+	    manifest {
+	        attributes(
+	            'Main-Class': 'app.App'
+	        )
+	    }
+	    from sourceSets.main.output
+	}
+	
+	tasks.withType(JavaCompile) {
+	    options.encoding = 'UTF-8'
+	}
+	
+	// Usa Gradle 8.5
+	wrapper {
+	    gradleVersion = '8.5'
+	}
+	
+	task run(type: JavaExec) {
+	    mainClass = 'app.App'  // Cambio realizado aquí
+	    classpath = sourceSets.main.runtimeClasspath
+	}
