@@ -248,6 +248,10 @@ Este proyecto está bajo la Licencia (Versión Limitada) - ver el archivo LICENS
 
 Este proyecto no solo contribuye al desarrollo de una herramienta eficiente para la recopilación de información académica, sino que también sienta las bases para futuras investigaciones y análisis en el ámbito institucional. La conexión a SerpApi asegura la obtención de datos confiables, mientras que la arquitectura MVC facilita la mantenibilidad y escalabilidad del sistema. En resumen, este proyecto marca un paso significativo hacia la optimización de procesos académicos y la mejora continua en la calidad de la información recopilada.
 
-## Captura de Google Scholar Author
+## Captura de Google Scholar Profile y Author
 
-![Google Scholar Profile](src\main\resources\capturas\google_scholar_profile\Capturas_GoogleScholarProfile_investigador_universidad_mexico_norte/Captura%20web_12-1-2024_882_serpapi.com.jpeg)
+![Google Scholar Profile](src/main/resources/capturas/google_scholar_profile/Capturas_GoogleScholarProfile_investigador_universidad_mexico_norte/Captura web_12-1-2024_74630_serpapi.com.jpeg)
+
+![Google Scholar Author](src/main/resources/capturas/google_scholar_author/Capturas_GoogleScholarAuthor_investigador_universidad_mexico_norte/Captura web_12-1-2024_74830_serpapi.com.jpeg)
+
+
