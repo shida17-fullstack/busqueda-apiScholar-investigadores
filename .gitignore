@@ -23,3 +23,7 @@ Task/*
 
 # Gradle 8.5 binary distribution
 gradle-8.5-bin/
+
+# Gradle wrapper
+gradlew
+gradlew.bat

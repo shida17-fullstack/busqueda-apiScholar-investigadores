@@ -157,12 +157,13 @@ SELECT * FROM scholar_autor;
 ### Aclaración sobre la Conexión a MySQL
 
 Es importante mencionar que, además de utilizar la línea de comandos para interactuar con MySQL, existen otras formas de administrar y visualizar la base de datos. Puedes explorar herramientas gráficas como MySQL Workbench o DBeaver, que ofrecen interfaces intuitivas para gestionar bases de datos MySQL. Asegúrate de configurar estas herramientas con la misma información de conexión que se encuentra en BDConnect.java para garantizar la coherencia en la administración de la base de datos.
-.-P
+
 ## Cambios en la Estructura del Proyecto
 Se han realizado modificaciones en la estructura del proyecto. Los archivos afectados incluyen:
 
-**ScholarInvestigatorModel.java:** Se ha actualizado para incluir la funcionalidad de guardar datos en la base de datos MySQL.
-**BDConnect.java:** Nuevo archivo que gestiona la conexión a la base de datos MySQL.
+-**ScholarInvestigatorModel.java:** Se ha actualizado para incluir la funcionalidad de guardar datos en la base de datos MySQL.
+
+-**BDConnect.java:** Nuevo archivo que gestiona la conexión a la base de datos MySQL.
 
 ## Captura de la Consola MySQL
 A continuación, se presenta una captura de la consola de MySQL después de ejecutar los comandos mencionados:
@@ -217,9 +218,8 @@ A continuación, se presenta una captura de la consola de MySQL después de ejec
       - **view:** Contiene las clases de vista Author.java y ScholarInvestigatorView.java.
     - **resources:** Contiene recursos adicionales.
       - **capturas:** Carpeta que guarda capturas de pantalla.
-      **consola:** Contiene capturas de la consola.
-
-		   Consola_Mysql_01.png: **AGREGADO**
+      - **consola:** Contiene capturas de la consola.
+		     Consola_Mysql_01.png: **AGREGADO**
 	       Consola_Mysql_02.png: **AGREGADO**
 	       Segunda_ConsolaMysql_01.png: **AGREGADO**
 	       Segunda_ConsolaMysql_02.png: **AGREGADO**
