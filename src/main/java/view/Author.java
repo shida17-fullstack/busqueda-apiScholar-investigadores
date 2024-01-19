@@ -63,7 +63,7 @@ public class Author {
     // Método para obtener los detalles del autor como una cadena de texto
     public String obtenerDetalles() {
         return "ID: " + authorId + "\n" +
-                //"Afiliación: " + affiliation + "\n" +
+                "Afiliación: " + affiliation + "\n" +
                 "Citas: " + citedBy + "\n" +
                 "Email: " + email + "\n" +
                 "Total de Artículos: " + totalArticles + "\n" +  // Se cambió de articlesByYear2023 a totalArticles

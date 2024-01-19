@@ -3,7 +3,11 @@ package model;
 import com.fasterxml.jackson.databind.JsonNode;
 import utils.SerpApiRequest;
 import view.Author;
+import baseDatos.BDConnect;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -16,7 +20,7 @@ public class ScholarInvestigatorModel {
 
         // Parámetros para Google Scholar Profiles
         Map<String, String> paramsProfiles = new HashMap<>();
-        paramsProfiles.put("mauthors", "investigador universidad mexico");//realizar cambios a investigador universidad mexico norte/investigador emerito universidad mexico norte/investigador universidad norte mexico
+        paramsProfiles.put("mauthors", "investigador universidad mexico");
         paramsProfiles.put("hl", "es");
 
         SerpApiRequest serpApiRequest = new SerpApiRequest();
@@ -54,6 +58,9 @@ public class ScholarInvestigatorModel {
                     int totalArticles = getTotalArticles(authorResponse);
                     author.setTotalArticles(totalArticles);
 
+                    // Guardar el autor en la base de datos
+                    guardarAutorEnBaseDeDatos(author);
+
                     autores.add(author);
                 } else {
                     System.out.println("La respuesta del autor no contiene la información esperada o la afiliación no está disponible.");
@@ -85,6 +92,25 @@ public class ScholarInvestigatorModel {
         } else {
             // Manejo de la situación en la que no hay datos para el campo articles_by_year ni para la cantidad total de citas
             return 0;  // O cualquier otro valor predeterminado
+        }
+    }
+
+    private void guardarAutorEnBaseDeDatos(Author author) {
+        try (Connection connection = BDConnect.getConnection()) {
+            String query = "INSERT INTO Author (author_id, affiliation, cited_by, email, total_articles, name) VALUES (?, ?, ?, ?, ?, ?)";
+            try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+                preparedStatement.setString(1, author.getAuthorId());
+                preparedStatement.setString(2, author.getAffiliation());
+                preparedStatement.setInt(3, author.getCitedBy());
+                preparedStatement.setString(4, author.getEmail());
+                preparedStatement.setInt(5, author.getTotalArticles());
+                preparedStatement.setString(6, author.getName());
+
+                preparedStatement.executeUpdate();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println("Error al guardar el autor en la base de datos.");
         }
     }
 }
