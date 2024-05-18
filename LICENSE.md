@@ -1,4 +1,5 @@
-# Licencia (Versión Limitada) Copyright (c) 2024 Andrea A. Butera – shyda17-fullstack
+# Licencia (Versión Limitada) Copyright (c) 2024 
+Andrea A. Butera – shyda17-fullstack
 
 Se concede el permiso, de forma gratuita, a cualquier persona que obtenga una copia de este software y los archivos de documentación asociados (el "Software"), para utilizar el Software exclusivamente con fines personales y manejarlo sin restricciones. Esto incluye, sin limitarse, los derechos para copiar, modificar, fusionar, publicar y distribuir copias del Software, siempre y cuando se cumplan las siguientes condiciones:
 
